@@ -15,6 +15,10 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  /* text-transform: capitalize; */
+}
+.capitalize{
+
   text-transform: capitalize;
 }
 body {
@@ -25,6 +29,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 ul {
   padding: 0;
@@ -41,8 +46,9 @@ img {
 }
 section {
   padding: 2rem 5%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
+
 .btn {
   display: inline-block;
   background-color: var(--main-color);
@@ -140,6 +146,9 @@ section {
 }
 .home .image {
   flex: 1;
+}
+.gap{
+  margin-right: 10px;
 }
 .home span {
   color: var(--main-color);
@@ -267,8 +276,11 @@ section {
   height: 100%;
   background-color: var(--main-color);
 }
-.row-2 .progress:nth-child(1) span{
-  width: 95%;
+.row-2 .progress span{
+  width: 100%;
+}
+/* .row-2 .progress:nth-child(1) span{
+  width: 100%;
 }
 .row-2 .progress:nth-child(2) span{
   width: 80%;
@@ -278,9 +290,9 @@ section {
 }
 .row-2 .progress:nth-child(4) span{
   width: 85%;
-}
+} */
 .row-2 .box-container {
-  flex: 1 1 40rem;
+  flex: 1 1 20rem;
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(20rem,1fr));
   grid-gap: 1.5rem;
@@ -411,15 +423,20 @@ section {
   -o-transition: var(--main-transition);
 }
 .portfolio .box-container .box:hover img {
-  width: 75%;
-  height: 75%;
+  width: 0%;
+  height: 0%;
 }
 .portfolio .box-container h3 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #252525;
   position: absolute;
   bottom: 1rem;
-  left: 1rem;
+  left: 0rem;
+}
+.portfolio .box-container p {
+  font-size: 1.7rem;
+  color: #333;
+  
 }
 .portfolio .box-container .icons {
   position: absolute;
@@ -597,3 +614,18 @@ section {
     display: none;
   }
 }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+  width: 600px;
+}
+
