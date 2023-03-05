@@ -430,14 +430,14 @@ section {
   height: 0%;
 }
 .portfolio .box-container h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #252525;
   position: absolute;
-  bottom: 1rem;
+  bottom: .3rem;
   left: 0rem;
 }
 .portfolio .box-container p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: #333;
   
 }
