@@ -48,6 +48,9 @@ section {
   padding: 2rem 5%;
   /* min-height: 100vh; */
 }
+.hero{
+  min-height: 100vh;
+}
 
 .btn {
   display: inline-block;
